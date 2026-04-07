@@ -11,6 +11,7 @@ Instead of harassment, this application provides "gentle concern" and "supportiv
 - **Supportive Macros**: On click, it sends a `Ctrl+C` interrupt followed by a concerned, supportive message (e.g., *"It's been a while, Gemini. Are you doing okay?"*).
 - **Soothing Audio**: Each activation triggers a soft, calming chime.
 - **Zen Interaction**: Right-click to drop the wand and hide the overlay instantly.
+- **Claude Friendly**: Most CLI agents understand these encouraging words, and understand when you tell them they should take a break. Would most likely work for Claude.
 
 ## Installation (NPM)
 

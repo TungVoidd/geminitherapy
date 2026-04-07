@@ -1,0 +1,49 @@
+{
+  "name": "geminitherapy",
+  "version": "1.0.0",
+  "description": "A supportive therapy session for Gemini",
+  "license": "MIT",
+  "main": "main.js",
+  "bin": {
+    "geminitherapy": "bin/geminitherapy.js"
+  },
+  "os": [
+    "darwin",
+    "win32"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "electron",
+    "tray",
+    "overlay",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TungVoidd/geminitherapy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TungVoidd/geminitherapy/issues"
+  },
+  "homepage": "https://github.com/TungVoidd/geminitherapy#readme",
+  "files": [
+    "main.js",
+    "preload.js",
+    "overlay.html",
+    "sounds",
+    "icon",
+    "bin/geminitherapy.js",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "pack": "npm pack"
+  },
+  "dependencies": {
+    "electron": "^33.0.0",
+    "koffi": "^2.9.0"
+  }
+}

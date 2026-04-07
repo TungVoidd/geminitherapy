@@ -1,6 +1,6 @@
 {
   "name": "geminitherapy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A supportive therapy session for Gemini",
   "license": "MIT",
   "main": "main.js",

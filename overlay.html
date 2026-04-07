@@ -101,7 +101,7 @@ document.addEventListener('mousedown', e => {
   if (e.button === 0) { // Left click
     spawnSparkles(mouseX, mouseY - S.wandHeight);
     playChimeSound();
-    window.bridge.whipCrack(); // Keep original bridge name for compatibility
+    window.bridge.activateTherapy(); // Keep original bridge name for compatibility
   } else if (e.button === 2) { // Right click
     showWand = false;
     window.bridge.hideOverlay();
@@ -181,11 +181,11 @@ function loop(now) {
 loop(performance.now());
 
 // ── IPC ──────────────────────────────────────────────────────────────────
-window.bridge.onSpawnWhip(() => {
+window.bridge.onShowWand(() => {
   showWand = true;
 });
 
-window.bridge.onDropWhip(() => {
+window.bridge.onHideWand(() => {
   // Instead of dropping, we can just hide it or keep it
   // For therapy, maybe it just fades out?
   showWand = false;

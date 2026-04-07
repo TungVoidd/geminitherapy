@@ -148,7 +148,7 @@ function createOverlay() {
     overlayReady = true;
     if (spawnQueued && overlay && overlay.isVisible()) {
       spawnQueued = false;
-      overlay.webContents.send('spawn-whip');
+      overlay.webContents.send('show-wand');
       refocusPreviousApp();
     }
   });
@@ -161,13 +161,13 @@ function createOverlay() {
 
 function toggleOverlay() {
   if (overlay && overlay.isVisible()) {
-    overlay.webContents.send('drop-whip');
+    overlay.webContents.send('hide-wand');
     return;
   }
   if (!overlay) createOverlay();
   overlay.show();
   if (overlayReady) {
-    overlay.webContents.send('spawn-whip');
+    overlay.webContents.send('show-wand');
     refocusPreviousApp();
   } else {
     spawnQueued = true;
@@ -175,7 +175,7 @@ function toggleOverlay() {
 }
 
 // ── IPC ─────────────────────────────────────────────────────────────────────
-ipcMain.on('whip-crack', () => {
+ipcMain.on('activate-therapy', () => {
   try {
     sendMacro();
   } catch (err) {

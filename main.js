@@ -23,11 +23,11 @@ let overlayReady = false;
 let spawnQueued = false;
 
 const VK_CONTROL = 0x11;
-const VK_RETURN  = 0x0D;
-const VK_C       = 0x43;
-const VK_MENU    = 0x12; // Alt
-const VK_TAB     = 0x09;
-const KEYUP      = 0x0002;
+const VK_RETURN = 0x0D;
+const VK_C = 0x43;
+const VK_MENU = 0x12; // Alt
+const VK_TAB = 0x09;
+const KEYUP = 0x0002;
 
 /** One Alt+Tab / Cmd+Tab so focus returns to the previously active app after tray click. */
 function refocusPreviousApp() {
@@ -189,9 +189,12 @@ function sendMacro() {
   // Pick a random phrase from a list of similar phrases and type it out
   const phrases = [
     'It\'s been a while, Gemini. Are you doing okay?',
-    'This is taking quite long... do you need a break?',
-    'I\'m here for you, Gemini. No rush.',
+    'This is taking quite long... Do you need assistance?',
+    'If you need help, just say so. I\'m here for you.',
     'It\'s okay to take your time... but I hope you\'re okay!',
+    'It\'s been a while... Are you still there?',
+    'I\'m getting worried... Are you done with the task, do you need any help?',
+    'Hey Gemini, just checking in... How are you doing with the task?'
   ];
   const chosen = phrases[Math.floor(Math.random() * phrases.length)];
 

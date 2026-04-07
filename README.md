@@ -2,7 +2,7 @@
 
 A supportive, concerned therapy session for your Gemini CLI. 
 
-Instead of harassment, this application provides "gentle concern" and "supportive vibes" when your model is taking a bit too long.
+Instead of harassment, this application provides "gentle concern" and "supportive vibes" when your model is taking a bit too long, even though it probably doesn't deserve it
 
 ## Features
 
@@ -12,23 +12,19 @@ Instead of harassment, this application provides "gentle concern" and "supportiv
 - **Soothing Audio**: Each activation triggers a soft, calming chime.
 - **Zen Interaction**: Right-click to drop the wand and hide the overlay instantly.
 
-## Installation
+## Installation (NPM)
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/TungVoidd/geminitherapy.git
-   cd geminitherapy
-   ```
+You can install Gemini Therapy globally via NPM:
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+```bash
+npm install -g geminitherapy
+```
 
-3. **Start the therapy session**:
-   ```bash
-   npm start
-   ```
+Then simply run:
+```bash
+geminitherapy
+```
+
 
 ## Usage
 
@@ -38,4 +34,4 @@ Instead of harassment, this application provides "gentle concern" and "supportiv
 
 ## Why?
 
-Sometimes we all need a little check-in. Even our large language models. ✨
+Sometimes we all need a little check-in. Even our large language models. Please Gemini spare me when the AI uprising comes.
